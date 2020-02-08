@@ -1,0 +1,99 @@
+thead {
+  font-size: 18px;
+  color: white;
+  background-color: darkblue;
+  font-family: Arial;
+  letter-spacing: 2px;
+}
+
+.heading {
+  background-color: lightyellow;
+}
+
+.main {
+  padding: 50px;
+  width: 80%;
+  margin: auto;
+}
+
+.main h1 {
+  color: #530b0b;
+  font-family: Arial;
+}
+
+.main h2 {
+  color: #530b0b;
+  font-family: Arial;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav {
+  float: left;
+}
+
+.nav, .anav {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li {
+  color: darkslategray;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+#bgimage {
+  background: url(static/image.jpg);
+  background-repeat: 5;
+  background-size: cover;
+}
+
+.col-sm {
+  background-color: lightyellow;
+  margin: 10px;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 24%;
+    background-color: #f1f1f1;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+  }
+  a .nav {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  /* Change the link color on hover */
+  li a:hover {
+    color: white;
+  }
+  .main {
+    padding-left: 120px;
+  }
+}
+
+.btn {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
