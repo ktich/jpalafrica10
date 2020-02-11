@@ -68,11 +68,11 @@ img {
   margin-top: 25px;
 }
 
-#contact {
+#communications {
   margin-top: 200px;
 }
 
-#contact, #about, #news {
+#communications, #testimonials, #timeline {
   float: right;
 }
 
@@ -101,5 +101,11 @@ img {
     text-align: left;
     padding: 5px 20px;
   }
+}
+
+.testimonial {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-top: solid grey 0.5px;
 }
 /*# sourceMappingURL=styles.css.map */
