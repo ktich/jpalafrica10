@@ -9,4 +9,4 @@ $(function() {
     } else {
       x.className = "topnav";
     }
-})
+});
