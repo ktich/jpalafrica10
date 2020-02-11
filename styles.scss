@@ -3,6 +3,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.main{
+  padding-top: 40px;
+  width: 60%;
+  margin: auto;
+}
+
+h1, subtitle{
+  text-align: center;
+}
+
+img{
+  margin-top: -20px;
+}
 
 .topnav {
   overflow: hidden;
@@ -14,9 +27,10 @@ body {
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
+  margin-top: 20px;
 }
 
 .box-shadow-menu {
@@ -37,8 +51,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: white;
+  color: #e35925;
 }
 
 .topnav a.active {
@@ -48,10 +61,14 @@ body {
 
 .topnav .box-shadow-menu {
   display: none;
-  padding-top: 10px;
+  margin-top: 25px;
 }
 
-#contact,#about,#news{
+#contact{
+  margin-top: 200px;
+}
+
+#contact, #about, #news{
   float: right;
 }
 
@@ -74,5 +91,6 @@ body {
     float: none;
     display: block;
     text-align: left;
+    padding: 5px 20px;
   }
 }
