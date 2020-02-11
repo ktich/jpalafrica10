@@ -15,7 +15,6 @@ body {
   color: black;
   text-align: center;
   padding: 14px 16px;
-  padding-top: 50px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -49,6 +48,11 @@ body {
 
 .topnav .box-shadow-menu {
   display: none;
+  padding-top: 10px;
+}
+
+#contact,#about,#news{
+  float: right;
 }
 
 @media screen and (max-width: 600px) {
