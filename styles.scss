@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 .main{
@@ -8,6 +9,16 @@ body {
   width: 60%;
   margin: auto;
 }
+
+@media only screen and (max-width: 768px) {
+  .main{
+    width: 95%;
+  }
+  .main>h1{
+    font-size: 24px;
+  }
+}
+
 
 h1,.subtitle{
   text-align: center;
@@ -17,8 +28,13 @@ h1,.subtitle{
   font-size: 20px;
 }
 
+h2{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 nav{
-  border-bottom: solid .5px grey;
+  border-bottom: solid 0.5px grey;
 }
 
 
@@ -34,4 +50,27 @@ nav{
   margin: auto;
   padding-bottom: 20px;
 }
+
+iframe{
+  padding-bottom: 40px;
+}
+
+.caption{
+  color: #2FAA9F;
+}
+
+.timeline-image{
+  margin-top: 30px;
+}
+
+button.navbar-toggler{
+  border: none;
+}
+
+p{
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
 
