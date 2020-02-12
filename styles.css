@@ -17,10 +17,6 @@ h1, .subtitle {
   font-size: 20px;
 }
 
-img {
-  margin-top: -20px;
-}
-
 .topnav {
   overflow: hidden;
   border-bottom: solid grey 0.5px;
@@ -109,10 +105,10 @@ img {
   border-top: solid grey 0.5px;
 }
 
-.home-page-photo {
+.home-image {
   width: 100%;
   height: auto;
   margin: auto;
-  background-size: 100% 100%;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
