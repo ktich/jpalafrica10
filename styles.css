@@ -108,4 +108,11 @@ img {
   padding-bottom: 10px;
   border-top: solid grey 0.5px;
 }
+
+.home-page-photo {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-size: 100% 100%;
+}
 /*# sourceMappingURL=styles.css.map */
