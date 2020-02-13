@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
 }
 
 .main {
@@ -83,8 +84,12 @@ footer .float-right {
   float: right;
 }
 
-.coming-soon {
+.coming-soon h1 {
   font-size: 70px;
+}
+
+.coming-soon img {
+  width: 100%;
 }
 
 .testimonial-image {
