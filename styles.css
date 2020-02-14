@@ -112,7 +112,6 @@ footer .float-right {
 }
 
 svg {
-  margin: auto;
   height: 85vh;
 }
 
@@ -146,7 +145,7 @@ g {
 }
 
 .heading {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 .container, .detail, .map {
@@ -161,7 +160,7 @@ g {
       grid-template-columns: 2fr 1fr;
   grid-gap: 5px;
   padding-bottom: 50px;
-  width: 100%;
+  width: 60%;
   overflow: hidden;
   grid-auto-rows: minmax(125px, auto);
 }
@@ -187,7 +186,7 @@ g {
   padding-bottom: 20px;
   border-bottom: solid grey 1px;
   margin-top: 120px;
-  margin-left: 30px;
+  margin-left: 0px;
 }
 
 .map-image {
@@ -230,5 +229,19 @@ g {
   .container p {
     margin-left: auto;
   }
+}
+
+.gallery-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.gallery-container a {
+  display: -ms-inline-grid;
+  display: inline-grid;
 }
 /*# sourceMappingURL=styles.css.map */

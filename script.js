@@ -17,4 +17,4 @@ $(".our-work").on('click', function(event){
     $(textClass).css("display", "block");
   })
 });
-  
+

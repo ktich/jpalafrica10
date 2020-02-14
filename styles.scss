@@ -123,7 +123,6 @@ footer{
 }
 
 svg{
-  margin: auto;
   height: 85vh;
 }
 
@@ -155,7 +154,7 @@ svg{
 
 
 .heading{
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 .container,.detail,.map{
@@ -166,7 +165,7 @@ svg{
   grid-template-columns: 2fr 1fr;
   grid-gap: 5px;
   padding-bottom: 50px;
-  width: 100%;
+  width: 60%;
   overflow: hidden;
   grid-auto-rows: minmax(125px, auto);
 }
@@ -192,7 +191,7 @@ svg{
   padding-bottom: 20px;
   border-bottom: solid grey 1px;
   margin-top: 120px;
-  margin-left: 30px;
+  margin-left: 0px;
 }
 
 .map-image{
@@ -235,4 +234,15 @@ svg{
     margin-left: auto;
   }
 }
+}
+
+//Communications -- gallery w. lightbox -- 
+.gallery-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  a{
+    display: inline-grid;
+  }
 }
