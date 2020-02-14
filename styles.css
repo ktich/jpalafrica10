@@ -194,7 +194,7 @@ g {
   width: 100%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1112px) {
   .container {
     margin: auto;
     display: block;
@@ -203,7 +203,7 @@ g {
     width: 50%;
   }
   .container h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .container .map {
     display: block;
@@ -224,6 +224,9 @@ g {
     margin-top: -100px;
     padding: 0px;
     z-index: -1;
+  }
+  .container p {
+    margin-left: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */

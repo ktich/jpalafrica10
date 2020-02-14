@@ -199,7 +199,7 @@ svg{
   width: 100%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1112px) {
 .container{
   margin: auto;
   display: block;
@@ -207,7 +207,7 @@ svg{
     width: 50%;
   }
   h2{
-    font-size: 18px;
+    font-size: 20px;
   }
   .map{
     display: block;
@@ -228,6 +228,9 @@ svg{
     margin-top: -100px;
     padding: 0px;
     z-index: -1;
+  }
+  p{
+    margin-left: auto;
   }
 }
 }
