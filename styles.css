@@ -198,6 +198,7 @@ g {
   .container {
     margin: auto;
     display: block;
+    width: 95%;
   }
   .container img {
     width: 50%;
