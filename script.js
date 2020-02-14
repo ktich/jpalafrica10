@@ -15,6 +15,7 @@ $(".our-work").on('click', function(event){
     var textClass = '.'+event.target.id;
     $(countryId).css("fill", "black");
     $(textClass).css("display", "block");
+    $(".country-click").css("display","none");
   })
 });
 
