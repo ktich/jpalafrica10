@@ -19,3 +19,5 @@ $(".our-work").on('click', function(event){
   })
 });
 
+$('.timeline').timelify()
+
