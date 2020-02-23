@@ -1,7 +1,62 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   overflow-x: hidden;
+}
+
+body a {
+  color: #2FAA9F;
+}
+
+body a:hover {
+  color: rgba(47, 170, 159, 0.6);
+}
+
+body h1 {
+  padding-bottom: 15px;
+}
+
+body h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+body h3 {
+  font-size: 20px;
+  color: #e35925;
+}
+
+body ul > li {
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-nav, .navbar-brand {
+    padding: 25px;
+  }
+}
+
+.navbar .navbar-nav > li > a {
+  font-size: 17px;
+  padding: 10px;
+}
+
+.navbar .collapse .navbar-nav > li > a {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.navbar .collapse .navbar-nav > li > a:hover {
+  color: #e35925;
+}
+
+.icon {
+  width: 60%;
+  display: inline-block;
+  margin: auto;
+  padding: 0px;
 }
 
 .main {
@@ -52,6 +107,7 @@ nav {
   border-top: solid grey 0.5px;
 }
 
+.testimonial
 .home-image {
   width: 100%;
   height: auto;
@@ -78,22 +134,30 @@ button.navbar-toggler {
 p {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
 footer {
-  padding-top: 20px;
-  bottom: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 10%;
+      grid-template-columns: 80% 10%;
+  padding: 30px;
+  bottom: 10px;
   width: 100%;
   height: 2.5rem;
 }
 
 footer p {
+  display: -ms-inline-grid;
+  display: inline-grid;
   margin-right: 0px;
 }
 
 footer .float-right {
   float: right;
   margin-left: auto;
+  padding-right: 15px;
 }
 
 .coming-soon h1 {
@@ -110,16 +174,41 @@ footer .float-right {
 }
 
 .testimonial:last-child {
-  border-bottom: solid grey .5px;
+  border-bottom: none;
 }
 
-.heading {
+.map-section-container {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0px;
+  background-color: #2FAA9F;
+  color: #e3e3e3;
+}
+
+.map-section-container a {
+  color: #F2C200;
+}
+
+.map-section-container a:hover {
+  color: #F2C200;
+}
+
+.map-heading {
   padding: 20px;
   text-align: center;
+  padding-bottom: 10px;
+}
+
+.map-heading h2 {
+  font-size: 55px;
+}
+
+.heading .map-heading > h2 {
+  font-size: 40px;
 }
 
 svg {
-  height: 85vh;
+  width: 80%;
 }
 
 g {
@@ -127,9 +216,9 @@ g {
 }
 
 .st0 {
-  fill: #989898;
+  fill: #e3e3e3;
   stroke-width: 1px;
-  stroke: white;
+  stroke: #2FAA9F;
   z-index: 0;
 }
 
@@ -143,42 +232,37 @@ g {
 }
 
 #Botswana, #South-Africa, #Nigeria, #Malawi {
-  fill: #e35925;
+  fill: #F2C200;
   cursor: pointer;
 }
 
 #Nigeria:hover, #South-Africa:hover, #Botswana:hover, #Malawi:hover {
-  fill: black;
-}
-
-.heading {
-  padding-bottom: 10px;
+  fill: rgba(0, 0, 0, 0.6);
 }
 
 .container, .detail, .map {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
 }
 
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  grid-gap: 5px;
-  padding-bottom: 50px;
-  width: 60%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  min-width: 90%;
   overflow: hidden;
-  grid-auto-rows: minmax(125px, auto);
 }
 
 .map {
-  height: 85vh;
-  padding-left: 30px;
+  width: 100%;
+  border-right: solid #e3e3e3 0.5px;
 }
 
 .detail {
   float: right;
+  margin-left: 20px;
   text-align: center;
   position: relative;
 }
@@ -189,18 +273,23 @@ g {
 }
 
 .content {
+  z-index: 1;
+  width: 300px;
   display: none;
   padding-bottom: 20px;
-  border-bottom: solid grey 1px;
-  margin-top: 120px;
-  margin-left: 0px;
+  padding-top: 120px;
+  margin: auto;
 }
 
 .map-image {
   width: 100%;
 }
 
-@media only screen and (max-width: 1112px) {
+.country-click {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
   .container {
     margin: auto;
     display: block;
@@ -215,26 +304,40 @@ g {
   .container .map {
     display: block;
     position: relative;
-    width: 60vw;
-    height: auto;
+    width: auto;
+    height: 75vh;
     margin: auto;
-    margin-left: 0px;
+    z-index: 1;
+    border: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   .container svg {
-    width: 60vw;
-    height: auto;
-    margin: 0px;
-    padding: 0px;
+    width: auto;
+    height: 70vh;
+    margin: auto;
+    padding-right: 40px;
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   .container .detail {
     display: block;
     position: relative;
-    margin-top: -100px;
+    margin: auto;
     padding: 0px;
-    z-index: -1;
+    z-index: 0;
+    text-align: center;
   }
   .container p {
-    margin-left: auto;
+    width: 100%;
+    padding-top: 0px;
+    margin-top: 10px;
+  }
+  .container .content {
+    border-top: solid #e3e3e3 1px;
+    width: 100%;
+    padding-top: 0px;
   }
 }
 
@@ -250,5 +353,66 @@ g {
 .gallery-container a {
   display: -ms-inline-grid;
   display: inline-grid;
+}
+
+.centred-heading {
+  text-align: center;
+}
+
+.timeline-container > .timeline {
+  width: 80%;
+  margin: auto;
+}
+
+.timeline-container h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .timeline-container {
+    padding-top: 100px;
+  }
+}
+
+.research-image {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.sector-blocks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  margin: auto;
+}
+
+.sector-item {
+  margin: auto;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  text-align: center;
+}
+
+.sector-item p {
+  margin-top: -20px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
+
+#electricity, #finance, #admindata {
+  padding-top: 30px;
+}
+
+.research-section {
+  padding-bottom: 50px;
+}
+
+.page-divider {
+  background-color: #2FAA9F;
 }
 /*# sourceMappingURL=styles.css.map */
