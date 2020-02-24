@@ -231,12 +231,12 @@ g {
   top: 0;
 }
 
-#Botswana, #South-Africa, #Nigeria, #Malawi {
+.our-work {
   fill: #F2C200;
   cursor: pointer;
 }
 
-#Nigeria:hover, #South-Africa:hover, #Botswana:hover, #Malawi:hover {
+.our-work:hover {
   fill: rgba(0, 0, 0, 0.6);
 }
 
@@ -269,15 +269,15 @@ g {
 
 .detail p {
   position: relative;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .content {
   z-index: 1;
-  width: 300px;
+  width: 320px;
   display: none;
   padding-bottom: 20px;
-  padding-top: 120px;
+  padding-top: 10px;
   margin: auto;
 }
 
@@ -414,5 +414,31 @@ g {
 
 .page-divider {
   background-color: #2FAA9F;
+}
+
+.blog-section {
+  padding-bottom: 100px;
+}
+
+.cta-banner {
+  width: 100%;
+  background-color: #2FAA9F;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.cta-banner button {
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin: 20px;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.cta-banner .cta-text {
+  font-size: 32px;
 }
 /*# sourceMappingURL=styles.css.map */
