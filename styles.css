@@ -3,6 +3,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
 }
 
 body a {
@@ -138,6 +140,7 @@ p {
 }
 
 footer {
+  position: absolute;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 80% 10%;
@@ -179,7 +182,7 @@ footer .float-right {
 
 .map-section-container {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 80px;
   padding: 0px;
   background-color: #2FAA9F;
   color: #e3e3e3;
@@ -440,5 +443,142 @@ g {
 
 .cta-banner .cta-text {
   font-size: 32px;
+}
+
+.tab-link {
+  border-radius: 15px;
+  margin: 40px 20px 20px 20px;
+  -webkit-box-shadow: 0 0 2px #e35925;
+          box-shadow: 0 0 2px #e35925;
+}
+
+.tabs {
+  text-align: center;
+}
+
+.tabs li.tab-link {
+  background-color: #e35925;
+  color: white;
+  font-size: 20px;
+}
+
+.tabs li.tab-link:hover {
+  background-color: #bd4518;
+}
+
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ul.tabs li {
+  background: none;
+  color: #222;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+ul.tabs li.current {
+  background: #ededed;
+  -webkit-box-shadow: 0 0 2px inset #e35925;
+          box-shadow: 0 0 2px inset #e35925;
+  color: #e35925;
+}
+
+.tab-content {
+  display: none;
+  padding: 15px;
+  border: solid #ededed 1px;
+  border-radius: 20px;
+}
+
+.tab-content.current {
+  display: inherit;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.accordions {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tab {
+  width: 100%;
+  color: #e35925;
+  overflow: hidden;
+}
+
+.tab-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+
+.tab-label:hover {
+  color: #bd4518;
+}
+
+.tab-label::before {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.tab-content-a {
+  max-height: 0;
+  padding: 0 1em;
+  color: black;
+  background: white;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+input:checked + .tab-label {
+  color: #e35925;
+}
+
+input:checked + .tab-label::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+input:checked ~ .tab-content-a {
+  max-height: 100vh;
+  padding: 1em;
+  font-size: 14px;
+}
+
+input:checked ~ .tab-content-a p {
+  font-size: 14px;
+}
+
+#finance, #admindata, #electricity, #labour-policy, #tarl {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+#labour {
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 /*# sourceMappingURL=styles.css.map */

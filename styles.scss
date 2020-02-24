@@ -11,6 +11,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
   a{
     color: $green;
   }
@@ -146,6 +148,7 @@ p{
 
 
 footer{
+  position: absolute;
   display: grid;
   grid-template-columns: 80% 10%;
   padding: 30px;
@@ -187,7 +190,7 @@ footer{
 
 .map-section-container{
   width: 100%;
-  margin-top: 100px;
+  margin-top: 80px;
   padding: 0px;
   background-color: $green;
   color: $lightergrey;
@@ -435,4 +438,130 @@ svg{
   .cta-text{
     font-size: 32px;
   }
+}
+
+
+//our-work page
+.tab-link{
+  border-radius: 15px;
+  margin: 40px 20px 20px 20px;
+  box-shadow: 0 0 2px $orange;
+}
+
+.tabs{
+  text-align: center;
+  li.tab-link{
+    background-color: $orange;
+    color: white;
+    font-size: 20px;
+  }
+  li.tab-link:hover{
+    background-color: darken($orange, 10%);
+  }
+}
+
+		ul.tabs{
+			margin: 0px;
+			padding: 0px;
+      list-style: none;
+    }
+    
+		ul.tabs li{
+			background: none;
+			color: #222;
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+		}
+
+		ul.tabs li.current{
+      background: #ededed;
+      box-shadow: 0 0 2px inset $orange;
+      color: $orange;
+		}
+
+		.tab-content{
+			display: none;
+			padding: 15px;
+      border: solid #ededed 1px;
+      border-radius: 20px;
+		}
+
+		.tab-content.current{
+			display: inherit;
+		}
+    
+//accordion styles
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.accordions {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tab {
+  width: 100%;
+  color: $orange;
+  overflow: hidden;
+  &-label {
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+    &:hover {
+      color: darken($orange, 10%);
+    }
+    &::before {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all .35s;
+    }
+  }
+  &-content-a {
+    max-height: 0;
+    padding: 0 1em;
+    color: black;
+    background: white;
+    transition: all .35s;
+  }
+}
+
+input:checked {
+  + .tab-label {
+    color: $orange;
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .tab-content-a {
+    max-height: 100vh;
+    padding: 1em;
+    font-size: 14px;
+    p{
+      font-size: 14px;
+    }
+  }
+}
+
+#finance, #admindata, #electricity, #labour-policy, #tarl{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+#labour{
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
 }

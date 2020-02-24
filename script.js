@@ -19,7 +19,18 @@ $(".our-work").on('click', function(event){
     $(countryId).css("fill", "rgba(0,0,0,0.5)");
     $(textClass).css("display", "block");
     $(".country-click").css("display","none");
-  })
+  });
+
+  $('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	});
+
 });
 
 $('.timeline').timelify()
