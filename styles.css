@@ -189,7 +189,7 @@ footer .float-right {
 
 .map-section-container {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 70px;
   padding: 0px;
   background-color: #2FAA9F;
   color: #e3e3e3;
@@ -381,7 +381,7 @@ g {
 
 @media only screen and (min-width: 900px) {
   .timeline-container {
-    padding-top: 100px;
+    padding-top: 40px;
   }
 }
 
@@ -454,7 +454,7 @@ g {
 
 .tab-link {
   border-radius: 15px;
-  margin: 40px 20px 20px 20px;
+  margin: 40px 30px 20px;
   -webkit-box-shadow: 0 0 2px #e35925;
           box-shadow: 0 0 2px #e35925;
 }
@@ -466,9 +466,9 @@ g {
 .tabs li.tab-link {
   background-color: #e35925;
   color: white;
-  font-size: 22px;
-  font-weight: 300;
-  padding: 12px 25px;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 14px 26px;
   letter-spacing: 2px;
 }
 
@@ -590,5 +590,39 @@ input:checked ~ .tab-content-a p {
   margin-bottom: 0px;
   padding-top: 0px;
   margin-top: 0px;
+}
+
+.timeline-cta {
+  margin: auto;
+  background-color: #5b5555;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 50px;
+  letter-spacing: 1.5px;
+}
+
+.timeline-cta button {
+  background: #2FAA9F;
+  border: solid #2FAA9F 1px;
+  margin: auto;
+  border-radius: 12px;
+  padding: 8px 16px;
+}
+
+.timeline-cta button a {
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.timeline-cta button:hover {
+  background: white;
+}
+
+.timeline-cta button:hover a {
+  color: #2FAA9F;
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */

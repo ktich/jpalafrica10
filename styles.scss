@@ -2,9 +2,11 @@
 $orange: #e35925;
 $green: #2FAA9F;
 $lightgreen: rgba(47, 170, 159, 0.6);
+$darkgreen: #2d616e;
 $yellow: #F2C200;
 $lightyellow: rgba(244, 195, 0, 0.1);
 $lightergrey: #e3e3e3;
+$timeline-line: #5b5555;
 
 body {
   margin: 0;
@@ -197,7 +199,7 @@ footer{
 
 .map-section-container{
   width: 100%;
-  margin-top: 80px;
+  margin-top: 70px;
   padding: 0px;
   background-color: $green;
   color: $lightergrey;
@@ -381,7 +383,7 @@ svg{
 
 @media only screen and (min-width: 900px) {
   .timeline-container{
-    padding-top: 100px;
+    padding-top: 40px;
   }
 }
 
@@ -451,7 +453,7 @@ svg{
 //our-work page
 .tab-link{
   border-radius: 15px;
-  margin: 40px 20px 20px 20px;
+  margin: 40px 30px 20px;
   box-shadow: 0 0 2px $orange;
 }
 
@@ -460,9 +462,9 @@ svg{
   li.tab-link{
     background-color: $orange;
     color: white;
-    font-size: 22px;
-    font-weight: 300;
-    padding: 12px 25px;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 14px 26px;
     letter-spacing: 2px;
   }
   li.tab-link:hover{
@@ -574,4 +576,35 @@ input:checked {
   margin-bottom: 0px;
   padding-top: 0px;
   margin-top: 0px;
+}
+
+//timeline page
+.timeline-cta{
+  margin: auto;
+  background-color: $timeline-line;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 50px;
+  letter-spacing: 1.5px;
+  button{
+    background: $green;
+    border: solid $green 1px;
+    margin: auto;
+    border-radius: 12px;
+    padding: 8px 16px;
+    a{
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 24px;
+    font-weight: 400;
+    }
+  }
+  button:hover{
+    background: white;
+    a{
+    color: $green;
+    text-decoration: none;
+    }
+  }
 }
