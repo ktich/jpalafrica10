@@ -21,6 +21,7 @@ $(".our-work").on('click', function(event){
     $(".country-click").css("display","none");
   });
 
+//tabs on our-work page
   $('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
@@ -29,7 +30,26 @@ $(".our-work").on('click', function(event){
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
-	});
+  });
+
+//linking to tab content using the tab id
+var url = document.location.toString();
+if (url.match('#tab-research')) {
+    $('#tab-research').addClass('current');
+};
+
+if (url.match('#tab-policy')) {
+  $('#tab-policy').addClass('current');
+};
+
+if (url.match('#tab-community')) {
+  $('#tab-community').addClass('current');
+};
+
+// Change hash for page-reload
+$('.tab-link a').on('shown.bs.tab', function (e) {
+    window.location.hash = e.target.hash;
+});
 
 });
 

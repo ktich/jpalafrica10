@@ -17,6 +17,7 @@ body a:hover {
 
 body h1 {
   padding-bottom: 15px;
+  padding-top: 30px;
 }
 
 body h2 {
@@ -92,6 +93,12 @@ h1, .subtitle {
 
 .subtitle {
   font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subtitle {
+    padding-top: 20px;
+  }
 }
 
 h2 {
@@ -308,7 +315,7 @@ g {
     display: block;
     position: relative;
     width: auto;
-    height: 65vh;
+    height: 60vh;
     margin: auto;
     z-index: 1;
     border: none;
@@ -317,7 +324,7 @@ g {
   }
   .container svg {
     width: auto;
-    height: 60vh;
+    height: 58vh;
     margin: auto;
     padding-right: 40px;
     position: relative;
@@ -459,7 +466,10 @@ g {
 .tabs li.tab-link {
   background-color: #e35925;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 12px 25px;
+  letter-spacing: 2px;
 }
 
 .tabs li.tab-link:hover {

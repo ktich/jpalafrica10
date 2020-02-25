@@ -21,6 +21,7 @@ body {
   }
   h1{
     padding-bottom: 15px;
+    padding-top: 30px;
     }
   h2{
     text-align: center;
@@ -97,6 +98,12 @@ h1,.subtitle{
 
 .subtitle{
   font-size: 20px;
+}
+
+@media only screen and (min-width: 768px){
+  .subtitle{
+    padding-top: 20px;
+  }
 }
 
 h2{
@@ -305,7 +312,7 @@ svg{
     display: block;
     position: relative;
     width: auto;
-    height: 65vh;
+    height: 60vh;
     margin: auto;
     z-index: 1;
     border: none;
@@ -314,7 +321,7 @@ svg{
   }
   svg{
     width: auto;
-    height: 60vh;
+    height: 58vh;
     margin: auto;
     padding-right: 40px;
     position: relative;
@@ -453,7 +460,10 @@ svg{
   li.tab-link{
     background-color: $orange;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 12px 25px;
+    letter-spacing: 2px;
   }
   li.tab-link:hover{
     background-color: darken($orange, 10%);
@@ -488,7 +498,7 @@ svg{
 		}
 
 		.tab-content.current{
-			display: inherit;
+      display: inherit;
 		}
     
 //accordion styles
