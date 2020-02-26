@@ -3,6 +3,7 @@ $orange: #e35925;
 $lightorange: rgba(227, 89, 37, 0.25);
 $green: #2FAA9F;
 $lightgreen: rgba(47, 170, 159, 0.6);
+$lightgreen: rgba(47, 170, 159, 0.25);
 $darkgreen: #2d616e;
 $yellow: #F2C200;
 $lightyellow: rgba(244, 195, 0, 0.1);
@@ -439,8 +440,82 @@ svg{
       transition: 1s;
     }
     .boxes{
-      height: 80vh;
-      padding-top: 80px;
+      height: 75vh;
+      padding-top: 70px;
+      padding-bottom: 40px;
+      width: 80%;
+      margin: auto;
+    }
+
+    .box-image{
+      background: url(static/team2.gif);
+      background-position: center bottom;
+      background-size: cover;
+      position: relative;
+      height: 55vh;
+    }
+
+
+    .box-image-2{
+      background: url(static/tarl_civ.jpg);
+      background-position: left bottom;
+      background-size: cover;
+      position: relative;
+      height: 55vh;
+    }
+
+    .box-text{
+      margin-left: 0px;
+    }
+
+    .box-text>p>button{
+      @extend .cta;
+      color: white;
+      border-radius: 10px;
+      font-size: 18px;
+      text-align: left;
+      margin-top: 25px;
+      position: relative;
+    }
+
+}
+
+.full-header-2{
+  width: 100%;
+  height: 80vh;
+  box-sizing: border-box;
+  background: $lightergreen;
+  background-size: cover;
+  color: black;
+  text-align: center;
+  overflow: hidden;
+    h1{
+      font-size: 46px;
+      letter-spacing: 1.5px;
+      padding-top: 10vh;
+      text-align: left;
+      padding-left: 40px;
+    }
+    .subtitle{
+      padding-left: 40px;
+      font-size: 30px;
+      text-align: left;
+    }
+    .header-arrow{
+      text-align: center;
+      font-size: 30px;
+      position: absolute;
+      top: 85vh;
+      padding: 10px;
+    }
+    .header-arrow:hover{
+      cursor: pointer;
+      color: $orange;
+      transition: 1s;
+    }
+    .boxes{
+      height: 75vh;
+      padding-top: 70px;
       padding-bottom: 40px;
       width: 80%;
       margin: auto;
