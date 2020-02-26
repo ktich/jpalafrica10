@@ -388,6 +388,7 @@ svg{
     letter-spacing: 2px;
   }
   .subtitle{
+    padding-top: 0px;
     font-size: 30px;
   }
 
@@ -403,9 +404,24 @@ svg{
     color: $orange;
     transition: 1s;
   }
-
 }
 
+.follow-buttons{
+  width: 100%;
+  margin: auto;
+  position: relative;
+  img{
+    margin: auto;
+    width: 30px;
+  }
+}
+
+.follow-image{
+  margin: auto;
+  width: 140px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
 
 
 .full-header{
@@ -565,8 +581,11 @@ svg{
 .subscribe{
   text-align: center;
   padding: 10px;
-  border: solid;
   width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), 
+  rgba(0, 0, 0, 0.4)), url(static/tarl_civ.jpg);
+  background-size: cover;
+  color: white;
 }
 
 .main-landing{
@@ -659,6 +678,7 @@ svg{
 .cta-bottom{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+  grid-column-gap: 20px;
   margin-bottom: 50px;
   margin-top: 80px;
 }
@@ -674,11 +694,6 @@ svg{
   position: relative;
   right: 0;
   text-align: center;
-}
-
-.twitter-follow{
-  display: inline-grid;
-  border: solid;
 }
 
 //Fancy timeline
@@ -705,29 +720,6 @@ svg{
   width: 100%;
   padding-top: 15px;
   padding-bottom: 25px;
-}
-
-.sector-blocks{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 10px;
-  margin: auto;
-}
-
-.sector-item{
-  margin: auto;
-  display: inline-grid;
-  text-align: center;
-
-  p{
-    margin-top: -20px;
-    padding-bottom: 10px;
-    padding-top: 0px;
-  }
-}
-
-#electricity, #finance, #admindata{
-  padding-top: 30px;
 }
 
 .work-section{

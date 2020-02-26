@@ -392,6 +392,7 @@ g {
 }
 
 .full-screen-header .subtitle {
+  padding-top: 0px;
   font-size: 30px;
 }
 
@@ -408,6 +409,26 @@ g {
   color: #e35925;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.follow-buttons {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.follow-buttons img {
+  margin: auto;
+  width: 30px;
+}
+
+.follow-image {
+  margin: auto;
+  width: 140px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
 }
 
 .full-header {
@@ -574,8 +595,11 @@ g {
 .subscribe {
   text-align: center;
   padding: 10px;
-  border: solid;
   width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(static/tarl_civ.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(static/tarl_civ.jpg);
+  background-size: cover;
+  color: white;
 }
 
 .main-landing {
@@ -673,6 +697,7 @@ g {
   display: grid;
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 20px;
   margin-bottom: 50px;
   margin-top: 80px;
 }
@@ -689,12 +714,6 @@ g {
   position: relative;
   right: 0;
   text-align: center;
-}
-
-.twitter-follow {
-  display: -ms-inline-grid;
-  display: inline-grid;
-  border: solid;
 }
 
 .timeline-container > .timeline {
@@ -717,33 +736,6 @@ g {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 25px;
-}
-
-.sector-blocks {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  margin: auto;
-}
-
-.sector-item {
-  margin: auto;
-  display: -ms-inline-grid;
-  display: inline-grid;
-  text-align: center;
-}
-
-.sector-item p {
-  margin-top: -20px;
-  padding-bottom: 10px;
-  padding-top: 0px;
-}
-
-#electricity, #finance, #admindata {
-  padding-top: 30px;
 }
 
 .work-section {
