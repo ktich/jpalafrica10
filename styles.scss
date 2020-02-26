@@ -397,7 +397,7 @@ svg{
     margin-left: auto;
     font-size: 30px;
     position: relative;
-    top: 300px;
+    top: 38vh;
   }
   .header-arrow:hover{
     cursor: pointer;
@@ -405,24 +405,6 @@ svg{
     transition: 1s;
   }
 }
-
-.follow-buttons{
-  width: 100%;
-  margin: auto;
-  position: relative;
-  img{
-    margin: auto;
-    width: 30px;
-  }
-}
-
-.follow-image{
-  margin: auto;
-  width: 140px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
 
 .full-header{
   width: 100%;
@@ -597,7 +579,6 @@ svg{
 .vertical-align{
   display: table-cell;
   vertical-align: middle;
-
 }
 
 .boxes{
@@ -627,20 +608,6 @@ svg{
         position: relative;
       }
       display: inline-grid;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .cta-banner{
-    padding: 0px;
-    .boxes
-    {
-      padding: 0px;
-      .box-image{
-        display: none;
-      }
-  }
-  
   }
 }
 
@@ -694,6 +661,122 @@ svg{
   position: relative;
   right: 0;
   text-align: center;
+}
+
+//responsive homepage
+@media only screen and (max-width: 500px) {
+  .full-screen-header{
+    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.4)), url("static/mobile/team.jpg");
+    background-size: cover;
+    background-position: right-bottom;
+    color: white;
+    text-align: center;
+    h1{
+      padding-top: 50px;
+      font-size: 30px;
+      letter-spacing: 1.5px;
+    }
+    .subtitle{
+      padding-top: 0px;
+      font-size: 24px;
+    }
+  
+    .header-arrow{
+      display: none;
+    }
+    
+  }
+
+  .main-landing{
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    .boxes>.box-text{
+      display: none;
+    }
+  }
+
+  .boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    grid-gap: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  
+    .box-text{
+      display: table;
+      padding: 0px;
+      margin-top: 0px;
+      height: 100%;
+    }
+      .box-video{
+        display: table;
+        padding-top: 20px;
+      }
+      .box-video::before{
+        content: "Watch Tavneet Suri, MIT Associate Professor of Applied Economics and J-PAL Africa's Scientific Director share her reflections on ten years of working with J-PAL Africa.";
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        padding: 5px;
+        margin-left: 10px;
+        position: relative;
+        display: inline-block;
+        width: 90%;
+      }
+      .box-image{
+        img{
+          display: none;
+        }
+        display: none;
+    }
+
+    .highlight{
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  
+  .follow-buttons{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    img{
+      margin: auto;
+      width: 30px;
+    }
+  }
+  
+  .follow-image{
+    margin: auto;
+    width: 140px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  
+}
+//end responsive homepage
+
+.follow-buttons{
+  width: 100%;
+  margin: auto;
+  position: relative;
+  img{
+    margin: auto;
+    width: 30px;
+  }
+}
+
+.follow-image{
+  margin: auto;
+  width: 140px;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 //Fancy timeline
