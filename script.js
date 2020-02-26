@@ -51,6 +51,18 @@ $('.tab-link a').on('shown.bs.tab', function (e) {
     window.location.hash = e.target.hash;
 });
 
+//scroll button on index page - full-screen header
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+//for arrow click part (PART2)
+ $('.header-arrow').on('click',function () {
+  $("html").scrollTop(0);
+   $('html, body').animate({
+     scrollTop: $(".main-landing").offset().top
+ }, 1000);
+ });
+
 });
 
 $('.timeline').timelify()

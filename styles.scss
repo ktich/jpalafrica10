@@ -1,5 +1,6 @@
 //colours
 $orange: #e35925;
+$lightorange: rgba(227, 89, 37, 0.25);
 $green: #2FAA9F;
 $lightgreen: rgba(47, 170, 159, 0.6);
 $darkgreen: #2d616e;
@@ -33,6 +34,10 @@ body {
   h3{
     font-size: 20px;
     color: $orange;
+  }
+  h4{
+    text-align: center;
+    padding: 10px;
   }
   ul>li{
     font-weight: 300;
@@ -263,6 +268,7 @@ svg{
   grid-template-columns: 50% 50%;
   min-width: 90%;
   overflow: hidden;
+  padding-bottom: 40px;
 }
 
 .map{
@@ -272,22 +278,24 @@ svg{
 
 .detail{
   //flex: 1 1 auto;
+  height: 100%;
+  display: table;
   float: right;
   margin-left: 20px;
   text-align: center;
-  position: relative;
+  .detail-vertical{
+    display: table-cell;
+    vertical-align: middle;
+  }
   p{
     position: relative;
-    margin-top: 120px;
   }
 }
 
 .content{
   z-index: 1;
-  width: 320px;
+  width: 70%;
   display: none;
-  padding-bottom: 20px;
-  padding-top: 10px;
   margin: auto;
 }
 
@@ -364,8 +372,235 @@ svg{
 
 //Homepage
 
+.full-screen-header{
+  width: 100%;
+  height: 85vh;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), 
+  rgba(0, 0, 0, 0.8)), url("static/tarl_civ_maths.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  h1{
+    font-size: 46px;
+    line-height: 2em;
+    padding-top: 40vh;
+    letter-spacing: 1.5px;
+  }
+  .subtitle{
+    font-size: 30px;
+  }
+}
+
+.header-arrow{
+  text-align: center;
+  margin-left: auto;
+  margin-top: 10px;
+  font-size: 30px;
+  position: absolute;
+}
+.header-arrow:hover{
+  cursor: pointer;
+  color: $orange;
+  transition: 1s;
+}
+
+.full-header{
+  width: 100%;
+  height: 80vh;
+  box-sizing: border-box;
+  background: $lightorange;
+  background-size: cover;
+  color: black;
+  text-align: center;
+  overflow: hidden;
+    h1{
+      font-size: 46px;
+      letter-spacing: 1.5px;
+      padding-top: 10vh;
+      text-align: left;
+      padding-left: 40px;
+    }
+    .subtitle{
+      padding-left: 40px;
+      font-size: 30px;
+      text-align: left;
+    }
+    .header-arrow{
+      text-align: center;
+      font-size: 30px;
+      position: absolute;
+      top: 85vh;
+      padding: 10px;
+    }
+    .header-arrow:hover{
+      cursor: pointer;
+      color: $orange;
+      transition: 1s;
+    }
+    .boxes{
+      height: 80vh;
+      padding-top: 80px;
+      padding-bottom: 40px;
+      width: 80%;
+      margin: auto;
+    }
+
+    .box-image{
+      background: url(static/team2.gif);
+      background-position: center bottom;
+      background-size: cover;
+      position: relative;
+      height: 55vh;
+    }
+
+
+    .box-image-2{
+      background: url(static/tarl_civ.jpg);
+      background-position: left bottom;
+      background-size: cover;
+      position: relative;
+      height: 55vh;
+    }
+
+    .box-text{
+      margin-left: 0px;
+    }
+
+    .box-text>p>button{
+      @extend .cta;
+      color: white;
+      border-radius: 10px;
+      font-size: 18px;
+      text-align: left;
+      margin-top: 25px;
+      position: relative;
+    }
+
+}
+
+.vertical-align>button{
+  @extend .cta;
+  color: white; 
+}
+
+.subscribe{
+  text-align: center;
+  padding: 10px;
+  border: solid;
+  width: 100%;
+}
+
+.main-landing{
+  width: 70%;
+  margin: auto;
+}
+
+
+.vertical-align{
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+.boxes{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+  grid-gap: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .box-text{
+    display: table;
+    padding: 5px;
+    height: 100%;
+  }
+    .box-video{
+      display: table;
+      padding-top: 18px;
+    }
+    .box-image{
+      padding: 0px;
+      position: relative;
+      margin: 0px;
+      img{
+        width: 100%;
+        margin: 0px;
+        left: 0px;
+        position: relative;
+      }
+      display: inline-grid;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cta-banner{
+    padding: 0px;
+    .boxes
+    {
+      padding: 0px;
+      .box-image{
+        display: none;
+      }
+  }
+  
+  }
+}
+
+.cta-banner{
+  .boxes{
+    padding: 0px;
+    width: 75%;
+    margin: auto;
+
+    h2{
+      text-align: left;
+    }
+    .highlight{
+      text-align: left;
+    }
+    .box-text{
+      margin-right: 40px;
+      text-align: left;
+      button{
+        margin-left: 0px;
+      }
+      }
+  }
+}
+
+.highlight{
+  font-size: 22px;
+  text-align: center;
+}
+
 .centred-heading{
   text-align: center;
+}
+
+.cta-bottom{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+.cta-text{
+  height: 100%;
+  display: table;
+  width: 95%;
+}
+
+.twitter-widget{
+  display: inline-grid;
+  position: relative;
+  right: 0;
+  text-align: center;
+}
+
+.twitter-follow{
+  display: inline-grid;
+  border: solid;
 }
 
 //Fancy timeline
@@ -417,7 +652,7 @@ svg{
   padding-top: 30px;
 }
 
-.research-section{
+.work-section{
   padding-bottom: 50px;
 }
 
@@ -436,13 +671,18 @@ svg{
   text-align: center;
   padding: 50px;
   button{
-    background-color: black;
-    padding: 15px;
+    background-color: $lightergrey;
+    padding: 15px 20px;
     border-radius: 10px;
     border: none;
     margin: 20px;
-    color: white;
+    color: $green;
     letter-spacing: 1.5px;
+    font-size: 18px;
+  }
+  button:hover{
+    background-color: darken($lightergrey, 10%);
+    color: darken($green, 10%);
   }
   .cta-text{
     font-size: 32px;
@@ -587,24 +827,26 @@ input:checked {
   padding: 20px;
   padding-bottom: 50px;
   letter-spacing: 1.5px;
-  button{
-    background: $green;
-    border: solid $green 1px;
-    margin: auto;
-    border-radius: 12px;
-    padding: 8px 16px;
-    a{
-    color: white;
-    letter-spacing: 1.5px;
-    font-size: 24px;
-    font-weight: 400;
-    }
+}
+
+.cta{
+  background: $green;
+  border: solid $green 1px;
+  margin: auto;
+  border-radius: 12px;
+  padding: 8px 16px;
+  a{
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 24px;
+  font-weight: 400;
   }
-  button:hover{
-    background: white;
-    a{
-    color: $green;
-    text-decoration: none;
-    }
+}
+.cta:hover{
+  border: solid darken($green, 20%) 1px;
+  background: darken($green, 10%);
+  a{
+  color: lightgrey;
+  text-decoration: none;
   }
 }

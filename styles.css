@@ -31,6 +31,11 @@ body h3 {
   color: #e35925;
 }
 
+body h4 {
+  text-align: center;
+  padding: 10px;
+}
+
 body ul > li {
   font-weight: 300;
 }
@@ -116,8 +121,7 @@ nav {
   border-top: solid grey 0.5px;
 }
 
-.testimonial
-.home-image {
+.testimonial .home-image {
   width: 100%;
   height: auto;
   margin: auto;
@@ -263,6 +267,7 @@ g {
       grid-template-columns: 50% 50%;
   min-width: 90%;
   overflow: hidden;
+  padding-bottom: 40px;
 }
 
 .map {
@@ -271,23 +276,26 @@ g {
 }
 
 .detail {
+  height: 100%;
+  display: table;
   float: right;
   margin-left: 20px;
   text-align: center;
-  position: relative;
+}
+
+.detail .detail-vertical {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .detail p {
   position: relative;
-  margin-top: 120px;
 }
 
 .content {
   z-index: 1;
-  width: 320px;
+  width: 70%;
   display: none;
-  padding-bottom: 20px;
-  padding-top: 10px;
   margin: auto;
 }
 
@@ -365,8 +373,250 @@ g {
   display: inline-grid;
 }
 
+.full-screen-header {
+  width: 100%;
+  height: 85vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.8))), url("static/tarl_civ_maths.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("static/tarl_civ_maths.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.full-screen-header h1 {
+  font-size: 46px;
+  line-height: 2em;
+  padding-top: 40vh;
+  letter-spacing: 1.5px;
+}
+
+.full-screen-header .subtitle {
+  font-size: 30px;
+}
+
+.header-arrow {
+  text-align: center;
+  margin-left: auto;
+  margin-top: 10px;
+  font-size: 30px;
+  position: absolute;
+}
+
+.header-arrow:hover {
+  cursor: pointer;
+  color: #e35925;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.full-header {
+  width: 100%;
+  height: 80vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(227, 89, 37, 0.25);
+  background-size: cover;
+  color: black;
+  text-align: center;
+  overflow: hidden;
+}
+
+.full-header h1 {
+  font-size: 46px;
+  letter-spacing: 1.5px;
+  padding-top: 10vh;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.full-header .subtitle {
+  padding-left: 40px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.full-header .header-arrow {
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  top: 85vh;
+  padding: 10px;
+}
+
+.full-header .header-arrow:hover {
+  cursor: pointer;
+  color: #e35925;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.full-header .boxes {
+  height: 80vh;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  width: 80%;
+  margin: auto;
+}
+
+.full-header .box-image {
+  background: url(static/team2.gif);
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+  height: 55vh;
+}
+
+.full-header .box-image-2 {
+  background: url(static/tarl_civ.jpg);
+  background-position: left bottom;
+  background-size: cover;
+  position: relative;
+  height: 55vh;
+}
+
+.full-header .box-text {
+  margin-left: 0px;
+}
+
+.full-header .box-text > p > button {
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 25px;
+  position: relative;
+}
+
+.vertical-align > button {
+  color: white;
+}
+
+.subscribe {
+  text-align: center;
+  padding: 10px;
+  border: solid;
+  width: 100%;
+}
+
+.main-landing {
+  width: 70%;
+  margin: auto;
+}
+
+.vertical-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.boxes .box-text {
+  display: table;
+  padding: 5px;
+  height: 100%;
+}
+
+.boxes .box-video {
+  display: table;
+  padding-top: 18px;
+}
+
+.boxes .box-image {
+  padding: 0px;
+  position: relative;
+  margin: 0px;
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+.boxes .box-image img {
+  width: 100%;
+  margin: 0px;
+  left: 0px;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .cta-banner {
+    padding: 0px;
+  }
+  .cta-banner .boxes {
+    padding: 0px;
+  }
+  .cta-banner .boxes .box-image {
+    display: none;
+  }
+}
+
+.cta-banner .boxes {
+  padding: 0px;
+  width: 75%;
+  margin: auto;
+}
+
+.cta-banner .boxes h2 {
+  text-align: left;
+}
+
+.cta-banner .boxes .highlight {
+  text-align: left;
+}
+
+.cta-banner .boxes .box-text {
+  margin-right: 40px;
+  text-align: left;
+}
+
+.cta-banner .boxes .box-text button {
+  margin-left: 0px;
+}
+
+.highlight {
+  font-size: 22px;
+  text-align: center;
+}
+
 .centred-heading {
   text-align: center;
+}
+
+.cta-bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+.cta-text {
+  height: 100%;
+  display: table;
+  width: 95%;
+}
+
+.twitter-widget {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  position: relative;
+  right: 0;
+  text-align: center;
+}
+
+.twitter-follow {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  border: solid;
 }
 
 .timeline-container > .timeline {
@@ -418,7 +668,7 @@ g {
   padding-top: 30px;
 }
 
-.research-section {
+.work-section {
   padding-bottom: 50px;
 }
 
@@ -439,13 +689,19 @@ g {
 }
 
 .cta-banner button {
-  background-color: black;
-  padding: 15px;
+  background-color: #e3e3e3;
+  padding: 15px 20px;
   border-radius: 10px;
   border: none;
   margin: 20px;
-  color: white;
+  color: #2FAA9F;
   letter-spacing: 1.5px;
+  font-size: 18px;
+}
+
+.cta-banner button:hover {
+  background-color: #cacaca;
+  color: #24827a;
 }
 
 .cta-banner .cta-text {
@@ -602,7 +858,7 @@ input:checked ~ .tab-content-a p {
   letter-spacing: 1.5px;
 }
 
-.timeline-cta button {
+.cta, .full-header .box-text > p > button, .vertical-align > button {
   background: #2FAA9F;
   border: solid #2FAA9F 1px;
   margin: auto;
@@ -610,19 +866,20 @@ input:checked ~ .tab-content-a p {
   padding: 8px 16px;
 }
 
-.timeline-cta button a {
+.cta a, .full-header .box-text > p > button a, .vertical-align > button a {
   color: white;
   letter-spacing: 1.5px;
   font-size: 24px;
   font-weight: 400;
 }
 
-.timeline-cta button:hover {
-  background: white;
+.cta:hover, .full-header .box-text > p > button:hover, .vertical-align > button:hover {
+  border: solid #195a54 1px;
+  background: #24827a;
 }
 
-.timeline-cta button:hover a {
-  color: #2FAA9F;
+.cta:hover a, .full-header .box-text > p > button:hover a, .vertical-align > button:hover a {
+  color: lightgrey;
   text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */
