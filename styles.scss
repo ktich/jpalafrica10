@@ -33,10 +33,11 @@ body {
     padding-top: 20px;
   }
   h3{
-    font-size: 20px;
+    font-size: 30px;
     color: $orange;
   }
   h4{
+    font-size: 26px;
     text-align: center;
     padding: 10px;
   }
@@ -95,7 +96,6 @@ body {
   .main>h2{
     font-size: 22px;
   }
-
   
 }
 
@@ -665,6 +665,7 @@ svg{
 
 //responsive homepage
 @media only screen and (max-width: 500px) {
+
   .full-screen-header{
     overflow: hidden;
     width: 100%;
@@ -771,6 +772,30 @@ svg{
       font-size: 18px;
       text-align: center;
     }
+  }
+
+  .cta-bottom{
+    text-align: center;
+    .cta-text.subscribe{
+      padding: 30px 50px;
+      position: relative;
+      margin: auto;
+      .vertical-align{
+        text-align: center;
+        position: relative;
+        margin: auto;
+        p{
+        text-align: center;
+        }
+      }
+    }
+    .twitter-widget{
+      display: none;
+    }
+  }
+
+  .main-landing>h4{
+    font-size: 20px;
   }
   
   .follow-buttons{
