@@ -568,7 +568,7 @@ g {
   position: relative;
 }
 
-.vertical-align > button {
+.vertical-align > a > button {
   color: white;
 }
 
@@ -700,7 +700,7 @@ g {
   }
   .full-screen-header h1 {
     padding-top: 50px;
-    font-size: 30px;
+    font-size: 34px;
     letter-spacing: 1.5px;
   }
   .full-screen-header .subtitle {
@@ -718,20 +718,32 @@ g {
   .main-landing .boxes > .box-text {
     display: none;
   }
+  .cta-banner .boxes {
+    margin: auto;
+    width: 100%;
+  }
+  .cta-banner .boxes .box-text {
+    width: 100%;
+  }
   .boxes {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 0px;
+    display: block;
     padding-top: 0px;
     padding-bottom: 0px;
     text-align: center;
+    width: 100%;
+    position: relative;
+    margin: auto;
   }
   .boxes .box-text {
     padding: 0px;
-    margin: 0px;
+    margin: auto;
+  }
+  .boxes .box-text .vertical-align {
     width: 100%;
+    display: block;
+    position: relative;
+    margin: auto;
+    padding: 0px;
   }
   .boxes .box-text .vertical-align h2 {
     text-align: center;
@@ -1056,7 +1068,7 @@ input:checked ~ .tab-content-a p {
   letter-spacing: 1.5px;
 }
 
-.cta, .full-header .box-text > p > button, .full-header-2 .box-text > p > button, .vertical-align > button {
+.cta, .full-header .box-text > p > button, .full-header-2 .box-text > p > button, .vertical-align > a > button {
   background: #2FAA9F;
   border: solid #2FAA9F 1px;
   margin: auto;
@@ -1064,19 +1076,19 @@ input:checked ~ .tab-content-a p {
   padding: 8px 16px;
 }
 
-.cta a, .full-header .box-text > p > button a, .full-header-2 .box-text > p > button a, .vertical-align > button a {
+.cta a, .full-header .box-text > p > button a, .full-header-2 .box-text > p > button a, .vertical-align > a > button a {
   color: white;
   letter-spacing: 1.5px;
   font-size: 24px;
   font-weight: 400;
 }
 
-.cta:hover, .full-header .box-text > p > button:hover, .full-header-2 .box-text > p > button:hover, .vertical-align > button:hover {
+.cta:hover, .full-header .box-text > p > button:hover, .full-header-2 .box-text > p > button:hover, .vertical-align > a > button:hover {
   border: solid #195a54 1px;
   background: #24827a;
 }
 
-.cta:hover a, .full-header .box-text > p > button:hover a, .full-header-2 .box-text > p > button:hover a, .vertical-align > button:hover a {
+.cta:hover a, .full-header .box-text > p > button:hover a, .full-header-2 .box-text > p > button:hover a, .vertical-align > a > button:hover a {
   color: lightgrey;
   text-decoration: none;
 }
