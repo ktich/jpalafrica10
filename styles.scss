@@ -802,6 +802,7 @@ svg{
     width: 100%;
     margin: auto;
     position: relative;
+    padding-bottom: 30px;
     img{
       margin: auto;
       width: 30px;
@@ -848,6 +849,53 @@ svg{
       margin: auto;
       padding-bottom: 30px;
     }
+  }
+
+  .cta-bottom{
+    text-align: center;
+    .cta-text.subscribe{
+      display: block;
+      position: relative;
+      width: 100%;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      .vertical-align{
+        display: block;
+        width: 100%;
+        position: relative;
+        margin: auto;
+        p{
+        text-align: center;
+        }
+      }
+    }
+    .twitter-widget{
+      position: relative;
+      margin: auto;
+      padding-top: 40px;
+        }
+  }
+
+  .main-landing>h4{
+    font-size: 20px;
+  }
+  
+  .follow-buttons{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding-bottom: 30px;
+    img{
+      margin: auto;
+      width: 30px;
+    }
+  }
+  
+  .follow-image{
+    margin: auto;
+    width: 140px;
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 
 }

@@ -811,6 +811,7 @@ g {
     width: 100%;
     margin: auto;
     position: relative;
+    padding-bottom: 30px;
   }
   .follow-buttons img {
     margin: auto;
@@ -856,6 +857,51 @@ g {
     position: relative;
     margin: auto;
     padding-bottom: 30px;
+  }
+  .cta-bottom {
+    text-align: center;
+  }
+  .cta-bottom .cta-text.subscribe {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .cta-bottom .cta-text.subscribe .vertical-align {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  .cta-bottom .cta-text.subscribe .vertical-align p {
+    text-align: center;
+  }
+  .cta-bottom .twitter-widget {
+    position: relative;
+    margin: auto;
+    padding-top: 40px;
+  }
+  .main-landing > h4 {
+    font-size: 20px;
+  }
+  .follow-buttons {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding-bottom: 30px;
+  }
+  .follow-buttons img {
+    margin: auto;
+    width: 30px;
+  }
+  .follow-image {
+    margin: auto;
+    width: 140px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
   }
 }
 
