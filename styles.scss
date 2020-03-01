@@ -24,16 +24,18 @@ body {
     color: $lightgreen;
   }
   h1{
+    font-size: 42px;
     padding-bottom: 15px;
     padding-top: 30px;
     }
   h2{
+    font-size: 34px;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
   }
   h3{
-    font-size: 30px;
+    font-size: 24px;
     color: $orange;
   }
   h4{
@@ -90,13 +92,15 @@ body {
   .main{
     width: 95%;
   }
-  .main>h1{
-    font-size: 26px;
+  h1{
+    font-size: 28px;
   }
-  .main>h2{
+  h2{
     font-size: 22px;
   }
-  
+  h3{
+    font-size: 20px;
+  }  
 }
 
 
@@ -105,11 +109,12 @@ h1,.subtitle{
 }
 
 .subtitle{
-  font-size: 20px;
+  font-size: 18px;
 }
 
 @media only screen and (min-width: 768px){
   .subtitle{
+    font-size: 20px;
     padding-top: 20px;
   }
 }
@@ -127,7 +132,6 @@ nav{
 .testimonial{
   padding-top: 15px;
   padding-bottom: 10px;
-  border-top: solid grey 0.5px;
 }
 
 .testimonial
@@ -167,9 +171,9 @@ footer{
   display: grid;
   grid-template-columns: 80% 10%;
   padding: 30px;
-  bottom: 10px;
+  bottom: 20px;
   width: 100%;
-  height: 2.5rem;
+  height: 5rem;
   p{
     display: inline-grid;
     margin-right: 0px;
@@ -192,9 +196,19 @@ footer{
 }
 
 //testimonial
+.testimonial{
+  p{
+    line-height: 1.8em;
+  }
+}
+
 .testimonial-image{
-  width: 80px;
+  width: 100px;
   margin-right: 10px;
+}
+
+.testimonial-name{
+  font-weight: 600;
 }
 
 .testimonial:last-child {
@@ -205,7 +219,7 @@ footer{
 
 .map-section-container{
   width: 100%;
-  margin-top: 70px;
+  margin-top: 45px;
   padding: 0px;
   background-color: $green;
   color: $lightergrey;
@@ -221,13 +235,6 @@ footer{
   padding: 20px; 
   text-align: center;
   padding-bottom: 10px;
-  h2{
-  font-size: 55px;
-  }
-}
-
-.heading .map-heading>h2{
-  font-size: 40px;
 }
 
 svg{
@@ -355,10 +362,73 @@ svg{
   .content{
     border-top: solid $lightergrey 1px;
     width: 100%;
-    padding-top: 0px;
+    margin-top: 20px;
   }
 }
 }
+
+@media only screen and (max-width: 360px) {
+  .map-section-container{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -60px;
+    .container{
+      margin: auto;
+    display: block;
+    width: 95%;
+    img{
+      width: 50%;
+    }
+    .map-heading>h2{
+      font-size: 18px;
+    }
+    h2{
+      font-size: 18px;
+    }
+    .map{
+      display: block;
+      position: relative;
+      width: 100%;
+      margin: auto;
+      z-index: 1;
+      border: none;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+    .map:before{
+      content: "Tap a country to learn more";
+      position: relative;
+      text-align: center;
+      font-size: 20px;
+      width: 100%;
+    }
+    svg{
+      width: 100%;
+      margin: auto;
+      padding-right: 40px;
+      position: relative;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+    .detail{
+      display: block;
+      position: relative;
+      margin: auto;
+      padding: 0px;
+      z-index: 0;
+      text-align: center;
+    }
+    p{
+      display: none;
+    }
+    .content{
+      border-top: solid $lightergrey 1px;
+      width: 100%;
+      padding-top: 0px;
+    }
+  }
+  }
+  }
 
 //Communications -- gallery w. lightbox -- 
 .gallery-container {
@@ -366,10 +436,25 @@ svg{
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
+  padding-bottom: 60px;
   a{
     display: inline-grid;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .gallery-container{
+  padding-bottom: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
+  h2{
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  }
+}
+
+
 
 //Homepage
 
@@ -775,7 +860,12 @@ svg{
   }
 
   .cta-bottom{
+    padding-top: 0px;
     text-align: center;
+    .cta-text{
+      padding-top: 0px;
+      margin-top: 0px;
+    }
     .cta-text.subscribe{
       padding: 30px 50px;
       position: relative;
@@ -953,7 +1043,7 @@ svg{
 }
 
 .blog-section{
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 
 .cta-banner{
@@ -981,11 +1071,25 @@ svg{
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .blog-section{
+    padding-bottom: 0px;
+  }
+
+  .cta-news{
+    margin-top: 0px;
+  }
+
+  .cta-bottom{
+    padding-top: 20px;
+    }
+}
+
 
 //our-work page
 .tab-link{
   border-radius: 15px;
-  margin: 40px 30px 20px;
+  margin: 20px 30px 20px;
   box-shadow: 0 0 2px $orange;
 }
 
@@ -995,8 +1099,8 @@ svg{
     background-color: $orange;
     color: white;
     font-size: 24px;
-    font-weight: 400;
-    padding: 14px 26px;
+    font-weight: 300;
+    padding: 13px 24px;
     letter-spacing: 2px;
   }
   li.tab-link:hover{
@@ -1109,6 +1213,32 @@ input:checked {
   padding-top: 0px;
   margin-top: 0px;
 }
+
+@media only screen and (max-width: 768px){
+.tab-link{
+  border-radius: 15px;
+  margin: 8px 4px 8px;
+  box-shadow: 0 0 2px $orange;
+}
+
+.tabs{
+  text-align: center;
+  li.tab-link{
+    background-color: $orange;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 12px 20px;
+    letter-spacing: 2px;
+  }
+  .tab-content{
+    .subtitle{
+      font-size: 13px;
+    }
+  }
+}
+}
+
 
 //timeline page
 .timeline-cta{
