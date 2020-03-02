@@ -1152,6 +1152,8 @@ input:checked ~ .tab-content-a {
   max-height: 100vh;
   padding: 1em;
   font-size: 14px;
+  font-weight: 300;
+  color: #414042;
 }
 
 input:checked ~ .tab-content-a p {

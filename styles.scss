@@ -1139,6 +1139,8 @@ input:checked {
     max-height: 100vh;
     padding: 1em;
     font-size: 14px;
+    font-weight: 300;
+    color: $font-grey;
     p{
       font-size: 14px;
     }
