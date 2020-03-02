@@ -748,9 +748,6 @@ g {
     width: 100%;
     margin: auto;
   }
-  .main-landing .boxes > .box-text {
-    display: none;
-  }
   .cta-banner .boxes {
     margin: auto;
     width: 100%;
@@ -794,18 +791,6 @@ g {
     display: table;
     padding-top: 20px;
     padding-bottom: 30px;
-  }
-  .boxes .box-video::before {
-    content: "Watch Tavneet Suri, MIT Associate Professor of Applied Economics and J-PAL Africa's Scientific Director share her reflections on ten years of working with J-PAL Africa.";
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    padding: 5px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    position: relative;
-    display: inline-block;
-    width: 90%;
   }
   .boxes .box-image {
     display: none;
