@@ -583,6 +583,27 @@ svg{
   color: white;
 }
 
+.our-work-subscribe{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), 
+  rgba(0, 0, 0, 0.4)), url(static/research.jpg);
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  background-size: cover;
+  color: white;
+}
+
+.news-subscribe{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), 
+  rgba(0, 0, 0, 0.4)), url(static/digiFI-subscribe.JPG);
+  background-position: right center;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  background-size: cover;
+  color: white;
+}
+
 .main-landing{
   width: 70%;
   margin: auto;
@@ -794,7 +815,7 @@ svg{
       padding-top: 0px;
       margin-top: 0px;
     }
-    .cta-text.subscribe{
+    .cta-text.subscribe,.cta-text.our-work-subscribe,.cta-text.news-subscribe{
       padding: 30px 50px;
       position: relative;
       margin: auto;
@@ -871,7 +892,7 @@ svg{
 
   .cta-bottom{
     text-align: center;
-    .cta-text.subscribe{
+    .cta-text.subscribe,.cta-text.our-work-subscribe,.cta-text.news-subscribe{
       display: block;
       position: relative;
       width: 100%;
