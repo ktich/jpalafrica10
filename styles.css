@@ -44,6 +44,12 @@ body ul > li {
   font-weight: 300;
 }
 
+.page-divider {
+  margin-top: 80px;
+  height: 0.5px;
+  background-color: rgba(47, 170, 159, 0.6);
+}
+
 @media only screen and (min-width: 768px) {
   .navbar-nav, .navbar-brand {
     padding: 25px;
@@ -187,7 +193,7 @@ footer .float-right {
 .testimonial {
   border: solid lightgrey .5px;
   padding: 30px 45px;
-  margin: 20px;
+  margin-bottom: 50px;
 }
 
 .testimonial .testimonial-name {
@@ -959,10 +965,6 @@ g {
 
 .work-section {
   padding-bottom: 50px;
-}
-
-.page-divider {
-  background-color: #2FAA9F;
 }
 
 .blog-section {
