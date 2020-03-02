@@ -216,8 +216,11 @@ footer .float-right {
 
 .map-section-container {
   width: 100%;
-  margin-top: 45px;
-  padding: 0px;
+  margin-top: 30px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   background-color: #2FAA9F;
   color: #e3e3e3;
 }
@@ -747,6 +750,13 @@ g {
     overflow: hidden;
     width: 100%;
     margin: auto;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .main-landing .boxes > .box-video img {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: -20px;
   }
   .cta-banner .boxes {
     margin: auto;
@@ -803,12 +813,25 @@ g {
     text-align: center;
   }
   .cta-bottom {
+    width: 100%;
     padding-top: 0px;
+    margin-top: 0px;
     text-align: center;
   }
   .cta-bottom .cta-text {
+    margin-top: -20px;
+    padding-top: 0px;
+  }
+  .cta-bottom .cta-text .vertical-align {
     padding-top: 0px;
     margin-top: 0px;
+    display: block;
+  }
+  .cta-bottom .cta-text .highlight {
+    font-size: 18px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: auto;
   }
   .cta-bottom .cta-text.subscribe, .cta-bottom .cta-text.our-work-subscribe, .cta-bottom .cta-text.news-subscribe {
     padding: 30px 50px;
@@ -1013,7 +1036,7 @@ g {
     margin-top: 0px;
   }
   .cta-bottom {
-    padding-top: 20px;
+    padding-top: 0px;
   }
 }
 

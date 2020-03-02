@@ -222,8 +222,11 @@ footer{
 
 .map-section-container{
   width: 100%;
-  margin-top: 45px;
-  padding: 0px;
+  margin-top: 30px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   background-color: $green;
   color: $lightergrey;
   a{
@@ -731,8 +734,17 @@ svg{
     overflow: hidden;
     width: 100%;
     margin: auto;
-    .boxes>.box-text{
+    padding-top: 0px;
+    margin-top: 0px;
+   // .boxes>.box-text{
       //display: none;
+   // }
+    .boxes>.box-video{
+      img{
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin-bottom: -20px;
+      }
     }
   }
 
@@ -809,11 +821,24 @@ svg{
   }
 
   .cta-bottom{
+    width: 100%;
     padding-top: 0px;
+    margin-top: 0px;
     text-align: center;
-    .cta-text{
-      padding-top: 0px;
-      margin-top: 0px;
+      .cta-text{
+        margin-top: -20px;
+        padding-top: 0px;
+        .vertical-align{
+          padding-top: 0px;
+          margin-top: 0px;
+          display: block;
+        }  
+        .highlight{
+          font-size: 18px;
+          padding-top: 0px;
+          margin-top: 0px;
+          margin-left: auto;
+        }
     }
     .cta-text.subscribe,.cta-text.our-work-subscribe,.cta-text.news-subscribe{
       padding: 30px 50px;
@@ -1026,7 +1051,7 @@ svg{
   }
 
   .cta-bottom{
-    padding-top: 20px;
+    padding-top: 0px;
     }
 }
 
