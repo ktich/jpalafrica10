@@ -681,8 +681,8 @@ svg{
 
 .cta-bottom{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
-  grid-column-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr) );
+  grid-column-gap: 16px;
   margin-bottom: 50px;
   margin-top: 80px;
 }
@@ -690,7 +690,8 @@ svg{
 .cta-text{
   height: 100%;
   display: table;
-  width: 95%;
+  width: 90%;
+  margin: auto;
 }
 
 .twitter-widget{
@@ -768,6 +769,7 @@ svg{
     margin: auto;
   
     .box-text{
+      font-size: 20px;
       padding: 0px;
       margin: auto;
       .vertical-align{
@@ -831,6 +833,7 @@ svg{
         .vertical-align{
           padding-top: 0px;
           margin-top: 0px;
+          margin-left: auto;
           display: block;
         }  
         .highlight{
@@ -881,6 +884,23 @@ svg{
   }
   
 }
+
+@media only screen and (max-width: 1300px){
+  .highlight{
+    margin: auto;
+  }
+  .vertical-align{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+    p{
+    font-size: 20px;
+    }
+  }
+}
+
 
 @media only screen and (max-width: 1024px){
   .boxes{
@@ -933,6 +953,15 @@ svg{
         }
       }
     }
+    .cta-text{
+      display: block;
+      position: relative;
+    }
+    .highlight{
+      display: block;
+      position: relative;
+      margin: auto;
+      }
     .twitter-widget{
       position: relative;
       margin: auto;
@@ -953,6 +982,16 @@ svg{
       margin: auto;
       width: 30px;
     }
+  }
+  .vertical-align{
+    margin: auto;
+    padding: 0px;
+    position: relative;
+    display: block;
+  }
+  .cta-bottom>.cta-text>.vertical-align>.highlight{
+    font-size: 22px;
+    text-align: center;
   }
   
   .follow-image{
