@@ -1654,7 +1654,7 @@ figcaption {
     margin-top: 0;
   }
   .radio:checked ~ .content-tl figure {
-    margin-bottom: -20px;
+    margin-bottom: -15px;
   }
   .radio:checked ~ .content-tl p {
     max-height: 900px;
