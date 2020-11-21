@@ -613,7 +613,7 @@ svg{
 
 .boxes{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr) );
   grid-gap: 40px;
   padding-top: 80px;
   padding-bottom: 50px;
@@ -1513,13 +1513,27 @@ figcaption{
 }
 
 /* -------------------------------------
+ * * small laptop / tablet
+ * * ------------------------------------- */
+@media screen and (max-width: 1024px){
+  .radio:checked ~ .content-tl{
+    max-height: 800px;
+    padding-top: 40px;
+    p{
+      text-align: left;
+    }
+  }
+}
+
+/* -------------------------------------
  * * mobile
  * * ------------------------------------- */
 @media screen and (max-width: 767px) {
   #timeline {
     margin-left: 0;
     padding-left: 0;
-    padding-right: 15px;
+    padding-right: 18px;
+    margin-bottom: 0;
     border-left: none;
   }
   #timeline li {
@@ -1580,28 +1594,33 @@ figcaption{
     font-size: 0.9em;
     line-height: 1.4;
     padding-top: 8px;
+    text-align: left;
   }
 
   .circle{
     display: none;
   }
   .date {
+    height: auto;
     margin-left: auto;
     display: block;
     text-align: center;
     font-size: 1em;
     position: relative;
     background-color: white;
+    padding: 0;
+    margin: 0;
   }
 
   .radio:checked + .relative label {
     white-space: normal;
   }
   .radio:checked ~ .content-tl{
+    max-height: 800px;
     .image{
       margin-top: 50px;
       margin-bottom: -10px;
-      max-height: 600px;
+      max-height: 400px;
     }
     a.image{
       margin-top: 0;
