@@ -1510,6 +1510,11 @@ label {
   display: block;
 }
 
+.radio:checked ~ .content-tl .image figure {
+  max-height: 95%;
+  max-width: 90%;
+}
+
 .radio:checked ~ .content-tl a.image {
   height: 105%;
 }

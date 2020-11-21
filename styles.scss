@@ -1478,6 +1478,10 @@ label {
         height: auto;
         display: block;
       }
+    figure{
+      max-height: 95%;
+      max-width: 90%;
+    }
   }
   a.image{
     height: 105%;
