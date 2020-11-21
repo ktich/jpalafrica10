@@ -1659,7 +1659,7 @@ figcaption {
   .radio:checked ~ .content-tl p {
     max-height: 900px;
     position: relative;
-    top: 25px;
+    top: 15px;
     padding-bottom: 10px;
   }
 }
