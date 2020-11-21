@@ -1366,7 +1366,7 @@ $light-teal:rgba(47, 170, 159,.25);
 
 .content-tl.grid{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   align-items: center;
   column-gap: 10px;
 }
@@ -1513,6 +1513,15 @@ figcaption{
 }
 
 /* -------------------------------------
+ * * large screens
+ * * ------------------------------------- */
+ @media screen and (min-width: 1200px){
+  .content-tl.grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* -------------------------------------
  * * small laptop / tablet
  * * ------------------------------------- */
 @media screen and (max-width: 1024px){
@@ -1521,6 +1530,7 @@ figcaption{
     padding-top: 40px;
     p{
       text-align: left;
+      padding-top: 20px;
     }
   }
 }
