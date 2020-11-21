@@ -1542,7 +1542,7 @@ figcaption{
 
   label {
     width: 90%;
-    font-size: .9em;
+    font-size: .8em;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -1618,15 +1618,16 @@ figcaption{
   .radio:checked ~ .content-tl{
     max-height: 900px;
     .image{
-      margin-top: 50px;
+      margin-top: 26px;
       margin-bottom: -10px;
       max-height: 400px;
     }
     a.image{
       margin-top: 0;
+      margin-bottom: 5px;
     }
     figure{
-      margin-bottom: -15px;
+      margin-bottom: -8px;
     }
   }
   .radio:checked ~ .content-tl p {
