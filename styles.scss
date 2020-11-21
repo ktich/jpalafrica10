@@ -1616,7 +1616,7 @@ figcaption{
     white-space: normal;
   }
   .radio:checked ~ .content-tl{
-    max-height: 800px;
+    max-height: 900px;
     .image{
       margin-top: 50px;
       margin-bottom: -10px;
@@ -1630,7 +1630,7 @@ figcaption{
     }
   }
   .radio:checked ~ .content-tl p {
-    max-height: 800px;
+    max-height: 900px;
     position: relative;
     top: 30px;
     padding-bottom: 10px;
