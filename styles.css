@@ -1515,10 +1515,6 @@ label {
   max-width: 90%;
 }
 
-.radio:checked ~ .content-tl a.image {
-  height: 105%;
-}
-
 figcaption {
   font-size: .8em;
   padding-top: 2px;
@@ -1554,11 +1550,48 @@ figcaption {
 /* -------------------------------------
  * * large screens
  * * ------------------------------------- */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .content-tl.grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+}
+
+/* -------------------------------------
+ * * weird middle size screen
+ * * ------------------------------------- */
+@media screen and (max-width: 1280px) {
+  .radio:checked ~ .content-tl {
+    max-height: 800px;
+    padding-top: 40px;
+  }
+  .radio:checked ~ .content-tl p {
+    text-align: left;
+    padding-top: 20px;
+  }
+  .radio:checked ~ .content-tl.large-responsive .image {
+    padding-top: 20px;
+    padding-left: 0;
+    margin-top: 15px;
+    margin-left: -10px;
+  }
+  .radio:checked ~ .content-tl.large-responsive .image img {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .radio:checked ~ .content-tl.large-responsive a > img {
+    padding-top: 0;
+    margin-top: -10px;
+  }
+  .radio:checked ~ .content-tl.large-responsive p {
+    padding-top: 28px;
+    margin-top: 10px;
+  }
+}
+
+.radio:checked ~ .content-tl.large-responsive.medium-responsive .image {
+  padding-top: 10px;
+  margin-top: 0;
 }
 
 /* -------------------------------------
@@ -1569,9 +1602,31 @@ figcaption {
     max-height: 800px;
     padding-top: 40px;
   }
+  .radio:checked ~ .content-tl .image {
+    padding-left: 0;
+    margin-left: 0;
+  }
   .radio:checked ~ .content-tl p {
     text-align: left;
     padding-top: 20px;
+  }
+  .radio:checked ~ .content-tl.large-responsive .image {
+    padding-top: 25px;
+    padding-left: 0;
+    margin-top: 15px;
+    margin-left: -10px;
+  }
+  .radio:checked ~ .content-tl.large-responsive .image img {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .radio:checked ~ .content-tl.large-responsive a > img {
+    padding-top: 0;
+    margin-top: -10px;
+  }
+  .radio:checked ~ .content-tl.large-responsive p {
+    padding-top: 28px;
+    margin-top: 10px;
   }
 }
 

@@ -1483,9 +1483,6 @@ label {
       max-width: 90%;
     }
   }
-  a.image{
-    height: 105%;
-  }
 }
 
 figcaption{
@@ -1519,9 +1516,50 @@ figcaption{
 /* -------------------------------------
  * * large screens
  * * ------------------------------------- */
- @media screen and (min-width: 1200px){
+ @media screen and (min-width: 1440px){
   .content-tl.grid{
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* -------------------------------------
+ * * weird middle size screen
+ * * ------------------------------------- */
+ @media screen and (max-width: 1280px){
+  .radio:checked ~ .content-tl{
+    max-height: 800px;
+    padding-top: 40px;
+    p{
+      text-align: left;
+      padding-top: 20px;
+    }
+  }
+  .radio:checked ~ .content-tl.large-responsive{
+    .image{
+      padding-top: 20px;
+      padding-left: 0;
+      margin-top: 15px;
+      margin-left: -10px;
+      img{
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+    a>img{
+      padding-top: 0;
+      margin-top: -10px;
+    }
+    p{
+      padding-top: 28px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.radio:checked ~ .content-tl.large-responsive.medium-responsive{
+  .image{
+    padding-top: 10px;
+    margin-top: 0;
   }
 }
 
@@ -1532,9 +1570,33 @@ figcaption{
   .radio:checked ~ .content-tl{
     max-height: 800px;
     padding-top: 40px;
+    .image{
+        padding-left: 0;
+        margin-left: 0;
+    }
     p{
       text-align: left;
       padding-top: 20px;
+    }
+  }
+  .radio:checked ~ .content-tl.large-responsive{
+    .image{
+      padding-top: 25px;
+      padding-left: 0;
+      margin-top: 15px;
+      margin-left: -10px;
+      img{
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+    a>img{
+      padding-top: 0;
+      margin-top: -10px;
+    }
+    p{
+      padding-top: 28px;
+      margin-top: 10px;
     }
   }
 }
